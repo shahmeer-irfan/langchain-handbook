@@ -1,0 +1,40 @@
+Structured output means your LLM doesn’t just return a blob of text — it gives you output in a predictable, machine-readable format like:
+
+Python dictionary
+
+JSON
+
+Pydantic model
+
+TypedDict
+
+List of objects
+
+Table format
+
+-->> there are two ways of generating structured output.
+by default some llms give structured output using specific function, while others who cant follow different techniques(Output Parsers)
+
+
+Three ways of specifying data format:
+1) TypedDict
+2) Pydantic
+3) Json_schema
+
+TypeDict is a way to define dictionaries in python that tells what keys are required with what type of value.
+-does not validate during runtime
+//USE WHEN U JUST NEED TYPE HINTS
+
+Pydantic is a Python library that provides data validation and parsing using Python type annotations.
+Pydantic lets you define data models that automatically:
+
+check if the input is valid (type-safe)
+
+convert input into correct types (if possible)
+
+give helpful errors if something is wrong
+//USE WHEN YOU NEED DATA VALIDATION AND IF LM MISSES THE VALUE
+
+
+JSON schema is also used to generate structured Output
+//USE WHEN YOU DONT WANT TO IMPORT EXTRA PYTHON library U NEED VALIDATION BUT DONT NEED PYTHON OBJECTS< U WANT STANDARD JSON FORMAT

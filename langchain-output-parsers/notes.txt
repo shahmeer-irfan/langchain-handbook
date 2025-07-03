@@ -1,0 +1,30 @@
+Output Parsers in langchian converts raw LLM responses into structured format like
+JSON
+CSV 
+pydantic models
+
+they ensure validation and ease of use in applications.
+
+types of output parsers:
+string outputparser
+json outputparser
+structured outputparser
+pydantic outputparser 
+
+1) string output parser is used to parse the output of llm and return it as a plain string.
+//we dont need to use result.content, if we use strOutputParser.
+
+
+2) converts output into JSON.
+//we cannot enforce any schema in JSON OutputParsers.
+
+3) StructuredOutputParser helps extract structured JSON using predefined schema(Response Schema).
+//NO DATA validation
+
+4)Pydantic Output Parser is a structured output parser in langchain that uses Pydantic Models to enforce schema validation when processing llm response.
+//strict schema/type safety/automatic validation/works well with other components
+
+In LangChain, a  partial variable refers to a way of pre-filling some of the input variables 
+for a chain or prompt template ahead of time — essentially making a "partially completed" version of it.
+This is especially useful when you know certain values in advance and want to avoid passing them 
+every time you invoke the chain.

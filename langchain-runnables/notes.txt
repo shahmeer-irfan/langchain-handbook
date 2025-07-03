@@ -1,0 +1,43 @@
+In LangChain, a Runnable is a standardized interface for anything that can be invoked (run). This could be:
+A prompt template
+A language model
+A retriever
+A parser
+A chain of logic
+A custom Python function
+
+All of these can be treated as Runnables — objects that have an .invoke(), .batch(), and .stream() method.
+
+
+Part 2: Why Were Runnables Introduced?
+Before Runnables, LangChain had many incompatible APIs like:
+.run()
+.predict()
+.call()
+.generate()
+
+Each component had different interfaces, so chaining them was painful, fragile, and inconsistent.
+❌ Old Problem:
+->You couldn’t easily chain a PromptTemplate to an LLM to a parser.
+->No standardized streaming, batch, or logging across components
+
+Why Runnables Fixed That
+Runnables introduced a unified protocol that supports:
+
+Method	Description
+.invoke()	For standard single-input calls
+.batch()	For running on lists of inputs
+.stream()	For streaming output
+.transform()	For async generators
+.stream_log()	For detailed streaming + LangSmith logging
+
+THE TWO CODE EXAMPLES HELPS U EXPLAIN DIFFERENCE BETWEEN RUNNABLES AND VANILLA IMPLEMENTATION OF LANGCHAIN CLASSES, WE EXPLORED UNDER THE HOOD OF LANGCHAIN
+
+
+TWO TYPES OF RUNNABLES:
+1) Task Specific Runnables(core langchain components e.g ChatOpenAI/PromptTemplate/Retriever)
+2) Runnable Primitives(help orchestrate execution(AI workflow) by defining how runnables interact (sequentially, in parallel etc etc))
+RunnableSequence/runnableParallel/RunnableMap/runnableBranch/Runnablelambda/RunnablePassthrough
+
+
+LCEL (langchain expression language) == runnable sequence
