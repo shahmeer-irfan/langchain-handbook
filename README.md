@@ -1,36 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LangChain Handbook - Shahmeer Irfan</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    code {
-      background-color: #e1e1e1;
-      padding: 2px 4px;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-  </style>
-</head>
-<body>
-
   <h1>LangChain Handbook</h1>
   <p><strong>Author:</strong> Shahmeer Irfan</p>
   <p>This repository contains my hands-on exploration and implementation of LangChain components using <code>Python</code>. The purpose of this project is to deeply understand the architecture of LangChain and how to build advanced LLM-based applications.</p>
@@ -79,6 +46,3 @@
     <h2>📧 Contact</h2>
     <p>Developed by Shahmeer Irfan. For inquiries or collaboration, feel free to connect via GitHub or LinkedIn.</p>
   </div>
-
-</body>
-</html>
