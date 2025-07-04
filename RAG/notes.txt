@@ -1,0 +1,15 @@
+Components of RAG:
+Document Loaders
+Text Splitters 
+Vector Databases 
+ Retrievers
+
+->Document Loaders:
+They are used to load data from various sources into standardized format(usually as Document objects), which can then be used 
+for chunking, embedding, retrieval, and generation.
+Document(
+    pag_content="asdsd"
+    meta_data=""
+)
+
+WE CAN ALSO MAKE CUSTOM DOCUMENT LOADERS BY INHERITING CUSTOM CLASS FROM LANGCHAIN
