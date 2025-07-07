@@ -1,0 +1,26 @@
+suppose you have movie recommendation system. you want to show ssimilar movies to user based on their plot.
+but you cannot do that directly
+first you will get all the plot of movies through some api
+then you will generate embeddings then you will have to store embeddings and do intelligent semantic Search
+because normal semantic search will take alot of time for millions of movies
+these are challenges you face during building this app
+and all these challenges can be solved by VECTOR STORES.
+
+VECTOR STORE is a system designed to store and retrieve data represented as numerical vectors.
+It uses indexing algorithms to find required query.
+It also provides CRUD Operations
+
+
+DIFFERENCE BETWEEN VECTOR STORES AND VECTOR Databases
+-> vector stores provide storage and retrieval options.
+-> where as when you associaite db properties with vector stores then it's known as vector database.
+
+Vector stores in langchain (FAISS, Pinecone,Chroma,Qdrant, Weaviate)
+they all share same interface
+from_documents()
+add_document()
+similarity_search(query, k=)
+
+Chroma is a lightweight, open source vector database that is especially friendly for local development and small-to-medium scale production needs.
+It lies between vector stores and vector db
+tenant->database->collection->documents->embedding vector and metadata about that vector
