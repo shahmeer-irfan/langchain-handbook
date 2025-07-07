@@ -1,0 +1,11 @@
+query ->find documents from data sources -> outputs documents (retrievers)
+there are multiple types of retrievers:
+-> wikipedia retriever / vector store retriever (differenciate on the basis of data sources)
+-> can also be categorized as search types.
+
+there are so many retrievers in langchain.
+
+Retriever is a runnable because it has all standarized functions.
+
+> wikipedia retrievers-> it uses wikipedia api to fetch relevant content. (keyword base)
+> vector retriever can be used to do semantic search using different strategies.
