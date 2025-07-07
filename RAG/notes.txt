@@ -12,4 +12,13 @@ Document(
     meta_data=""
 )
 
-WE CAN ALSO MAKE CUSTOM DOCUMENT LOADERS BY INHERITING CUSTOM CLASS FROM LANGCHAIN
+WE CAN ALSO MAKE CUSTOM DOCUMENT LOADERS BY INHERITING CUSTOM CLASS FROM LANGCHAIN.
+
+
+-> Text Splitters:
+ it is a process of breaking large chunks of text into smaller, manageabe pieces(chunks) that an LLM can handle effectively. 
+ > There is a limit on how much tokens can llm take at once.
+ benifits:
+ helps in embeddings, semantic Search, and summarization.
+
+ chunkviz.up.railway.app (visualizer) 
